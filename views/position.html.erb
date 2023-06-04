@@ -1,3 +1,31 @@
 <h1>Where is the ISS? 🛰️</h1>
+
+<body style="
+background-color: rgb(173, 187, 168); 
+font-size: 20px;
+font-family: monospace;
+">
+
 <!-- TODO add in actual position here -->
-<p>This observation was made at <%= Time.at(data['timestamp']) %>.</p>
+<p>This observation was made at 
+  <span style=
+    "font-weight:bold; 
+    color: MidnightBlue;">
+    <%= Time.at(data['timestamp']) %>
+  </span>.
+</p>
+
+<p>The ISS is currently over 
+  <span style=
+    "font-weight:bold; 
+    color: MidnightBlue;">
+    <%= data['iss_position']['latitude'] %>
+  </span>°N, 
+  <span style=
+    "font-weight:bold; 
+    color: MidnightBlue;">
+    <%= data['iss_position']['longitude'] %>
+  </span>°E
+</p>
+
+</body>
