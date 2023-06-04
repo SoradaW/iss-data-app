@@ -24,3 +24,7 @@ get '/astronauts' do
 
   erb :astronauts, locals: { data: astros }
 end
+
+get '/iss_position.json' do
+   "Test"
+end
