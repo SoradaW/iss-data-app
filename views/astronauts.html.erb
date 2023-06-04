@@ -12,9 +12,21 @@ font-family: monospace;
     "font-weight:bold; 
     color: MidnightBlue;">
     <%= data['number'] %>
-  </span> humans in space.
-</p>
+  </span> humans in space. </p>
 
-<p>🧑‍🚀: <%= data['people'] %>.</p>
+<p>They are:- </p>
+
+<ul>
+  <li><%= data['people'][0]['name'] %></li>
+  <li><%= data['people'][1]['name'] %></li>
+  <li><%= data['people'][2]['name'] %></li>
+  <li><%= data['people'][3]['name'] %></li>
+  <li><%= data['people'][4]['name'] %></li>
+  <li><%= data['people'][5]['name'] %></li>
+  <li><%= data['people'][6]['name'] %></li>
+  <li><%= data['people'][7]['name'] %></li>
+  <li><%= data['people'][8]['name'] %></li>
+  <li><%= data['people'][9]['name'] %></li>
+</ul>
 
 </body>
